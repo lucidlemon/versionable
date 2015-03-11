@@ -1,11 +1,11 @@
 <?php
-namespace Mpociot\Versionable;
+namespace Lucidlemon\Versionable;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Version
- * @package Mpociot\Versionable
+ * @package Lucidlemon\Versionable
  */
 class Version extends Eloquent
 {

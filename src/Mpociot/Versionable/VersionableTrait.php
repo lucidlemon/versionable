@@ -1,9 +1,9 @@
 <?php
-namespace Mpociot\Versionable;
+namespace Lucidlemon\Versionable;
 
 /**
  * Class VersionableTrait
- * @package Mpociot\Versionable
+ * @package Lucidlemon\Versionable
  */
 trait VersionableTrait
 {
@@ -26,10 +26,11 @@ trait VersionableTrait
         parent::boot();
 
         static::saving(function ($model) {
-            $model->versionablePreSave();
+            // removed PreSave() because of errors
         });
 
         static::saved(function ($model) {
+	        $model->versionablePreSave();
             $model->versionablePostSave();
         });
 
@@ -40,7 +41,7 @@ trait VersionableTrait
      */
     public function versions()
     {
-        return $this->morphMany('\Mpociot\Versionable\Version', 'versionable');
+        return $this->morphMany('\Lucidlemon\Versionable\Version', 'versionable');
     }
 
     /**
