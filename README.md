@@ -3,9 +3,9 @@
 
 With this package you can create a history of the objects stored in your application. You just need to insert the VersionableTrait in each Model that you want to set under version control. All versions are stored in a new database table.
 
-![image](http://img.shields.io/packagist/v/mpociot/versionable.svg?style=flat)
-![image](http://img.shields.io/packagist/l/mpociot/versionable.svg?style=flat)
-![image](http://img.shields.io/packagist/dt/mpociot/versionable.svg?style=flat)
+![image](http://img.shields.io/packagist/v/lucidlemon/versionable.svg?style=flat)
+![image](http://img.shields.io/packagist/l/lucidlemon/versionable.svg?style=flat)
+![image](http://img.shields.io/packagist/dt/lucidlemon/versionable.svg?style=flat)
 
 ### Examples
 
@@ -18,10 +18,10 @@ Store each change of
 ### Installation
 
 * Add the following line to your `require` array of the `composer.json` file:
-`"mpociot/versionable": "1.*"`
+`"lucidlemon/versionable": "1.*"`
 * Update your installation `composer update`
 * Run the migrations from this package
-`php artisan migrate --package=mpociot/versionable`
+`php artisan migrate --package=lucidlemon/versionable`
 
 ### Implementation
 
